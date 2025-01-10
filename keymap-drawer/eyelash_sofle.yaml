@@ -27,7 +27,7 @@ layers:
   - P
   - {t: \, s: '|'}
   - $$mdi:apple-keyboard-caps$$
-  - {t: A, h: '0'}
+  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - S
   - D
   - F
