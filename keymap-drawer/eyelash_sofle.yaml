@@ -27,7 +27,7 @@ layers:
   - P
   - {t: \, s: '|'}
   - $$mdi:apple-keyboard-caps$$
-  - {t: '$$mdi:minus-circle-outline$$', h: '&leftgui'}
+  - {t: A, h: '&leftgui'}
   - S
   - D
   - F
