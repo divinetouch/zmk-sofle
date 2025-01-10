@@ -54,9 +54,8 @@
 
         #binding-cells = <2>;
         hold-trigger-key-positions = <27>;
-        tapping-term-ms = <200>;
-        quick-tap-ms = <0>;
-        hold-while-undecided;
+        tapping-term-ms = <100>;
+        quick-tap-ms = <200>;
         flavor = "tap-unless-interrupted";
     };
 
