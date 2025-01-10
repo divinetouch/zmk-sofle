@@ -50,12 +50,12 @@
     hold_a: hold_a {
         compatible = "zmk,behavior-hold-tap";
         label = "HOLD_A";
-        bindings = <&leftgui>, <&kp>;
+        bindings = <&leftgui>, <&none>;
 
         #binding-cells = <2>;
         hold-trigger-key-positions = <27>;
-        tapping-term-ms = <400>;
-        hold-while-undecided;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <0>;
     };
 
     macros {
