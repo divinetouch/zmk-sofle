@@ -56,6 +56,8 @@
         hold-trigger-key-positions = <27>;
         tapping-term-ms = <200>;
         quick-tap-ms = <0>;
+        hold-while-undecided;
+        flavor = "tap-unless-interrupted";
     };
 
     macros {
