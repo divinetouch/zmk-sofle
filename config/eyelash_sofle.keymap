@@ -50,12 +50,12 @@
     hold_a: hold_a {
         compatible = "zmk,behavior-hold-tap";
         label = "HOLD_A";
-        bindings = <&leftgui>, <&kp>;
+        bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
         hold-trigger-key-positions = <27>;
-        tapping-term-ms = <100>;
-        quick-tap-ms = <200>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <100>;
         flavor = "tap-unless-interrupted";
     };
 
@@ -84,7 +84,7 @@
         leftgui: leftgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_GUI>;
+            bindings = <&kp LEFT_GUI>;
             label = "LEFTGUI";
         };
     };
