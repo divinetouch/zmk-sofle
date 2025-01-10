@@ -27,7 +27,7 @@ layers:
   - P
   - {t: \, s: '|'}
   - $$mdi:apple-keyboard-caps$$
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - '&leftgui'
   - S
   - D
   - F
