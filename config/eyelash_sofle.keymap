@@ -83,7 +83,7 @@
         leftgui: leftgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI>;
+            bindings = <&sk LEFT_GUI>;
             label = "LEFTGUI";
         };
     };
