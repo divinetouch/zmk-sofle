@@ -54,7 +54,7 @@
 
         #binding-cells = <2>;
         hold-trigger-key-positions = <27>;
-        tapping-term-ms = <100>;
+        tapping-term-ms = <400>;
         hold-while-undecided;
     };
 
