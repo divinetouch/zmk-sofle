@@ -47,6 +47,17 @@
         tap-ms = <30>;
     };
 
+    hold_a: hold_a {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOLD_A";
+        bindings = <&leftgui>, <&kp>;
+
+        #binding-cells = <2>;
+        hold-trigger-key-positions = <27>;
+        tapping-term-ms = <100>;
+        hold-while-undecided;
+    };
+
     macros {
         control_c: control_c {
             compatible = "zmk,behavior-macro";
@@ -68,6 +79,13 @@
             bindings = <&kp LG(TAB)>;
             label = "ALT_TAB";
         };
+
+        leftgui: leftgui {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI>;
+            label = "LEFTGUI";
+        };
     };
 
     keymap {
@@ -75,11 +93,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5           &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0             &kp BACKSPACE
-&kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T            &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P              &kp BSLH
-&kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G            &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp SEMI           &kp APOS
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B            &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH           &kp RCTRL
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp BACKSPACE    &kp ENTER        &kp ENTER  &kp SPACE  &mo 2      &kp RIGHT_SHIFT  &kp RIGHT_COMMAND
+&kp ESC     &kp N1       &kp N2        &kp N3        &kp N4  &kp N5           &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0             &kp BACKSPACE
+&kp TAB     &kp Q        &kp W         &kp E         &kp R   &kp T            &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P              &kp BSLH
+&kp CAPS    &hold_a 0 A  &kp S         &kp D         &kp F   &kp G            &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp SEMI           &kp APOS
+&kp LSHFT   &kp Z        &kp X         &kp C         &kp V   &kp B            &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH           &kp RCTRL
+&kp C_MUTE  &kp LCTRL    &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp BACKSPACE    &kp ENTER        &kp ENTER  &kp SPACE  &mo 2      &kp RIGHT_SHIFT  &kp RIGHT_COMMAND
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
