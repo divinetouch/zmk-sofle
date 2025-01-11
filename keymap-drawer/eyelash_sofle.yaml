@@ -31,7 +31,7 @@ layers:
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: F, h: '$$mdi:apple-keyboard-control$$'}
-  - G
+  - {t: G, h: LGUI}
   - $$mdi:arrow-left-bold$$
   - H
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
@@ -150,7 +150,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F12
@@ -158,15 +158,15 @@ layers:
   - +
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
-  - OUT BLE
+  - {t: OUT BLE, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '-', s: _}
-  - '{'
+  - {t: '{', type: held alternate}
   - '}'
-  - {t: '=', s: +}
+  - {t: '=', s: +, type: held alternate}
   - '{'
   - '}'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -260,9 +260,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [20, 18]
-  k: $$mdi:keyboard-tab$$
 - p: [41, 43]
   k: {t: '3', h: '$$mdi:gesture-tap-hold$$'}
 - p: [47, 49]
   k: {t: '3', h: '$$mdi:gesture-tap-hold$$'}
+- p: [30, 28]
+  k: {t: '2', h: '$$mdi:gesture-tap-hold$$'}
+- p: [34, 36]
+  k: {t: '2', h: '$$mdi:gesture-tap-hold$$'}
