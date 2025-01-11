@@ -151,11 +151,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:keyboard-tab$$
+  - (
+  - )
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F12
-  - _
-  - +
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - {t: OUT BLE, type: held alternate}
@@ -167,8 +167,8 @@ layers:
   - {t: '{', type: held alternate}
   - '}'
   - {t: '=', s: +, type: held alternate}
-  - '{'
-  - '}'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
