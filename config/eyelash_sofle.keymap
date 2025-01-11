@@ -94,22 +94,22 @@
 
         sticky_layor2 {
             bindings = <&sl 2>;
-            key-positions = <29 30>;
+            key-positions = <30 28>;
         };
 
         sticky_layer3 {
-            bindings = <&sl 3>;
-            key-positions = <16 17>;
+            bindings = <&sl 2>;
+            key-positions = <34 36>;
         };
 
         sticky_layor3 {
             bindings = <&sl 3>;
-            key-positions = <21 22>;
+            key-positions = <15 17>;
         };
 
         sticky_layor2r {
-            bindings = <&sl 2>;
-            key-positions = <34 35>;
+            bindings = <&sl 3>;
+            key-positions = <21 23>;
         };
     };
 
@@ -144,11 +144,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6     &kp F7            &kp F8             &kp F9     &kp F10      &trans
+&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans     &trans            &kp F11            &kp F12    &kp UNDER    &kp PLUS
+&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &kp MINUS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp EQUAL  &kp LBRC     &kp RBRC
+&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &kp UNDER  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS   &bootloader  &trans
+&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans     &trans            &trans             &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
