@@ -28,7 +28,7 @@ layers:
   - {t: \, s: '|'}
   - $$mdi:apple-keyboard-caps$$
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: LGUI}
+  - {t: S, h: LGUI}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
