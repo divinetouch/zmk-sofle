@@ -33,7 +33,7 @@ layers:
   - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - {t: G, h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:arrow-left-bold$$
-  - {t: G, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: H, h: '$$mdi:apple-keyboard-option$$'}
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L, h: RGUI}
@@ -197,3 +197,7 @@ layers:
 combos:
 - p: [29, 30]
   k: {t: '2', h: '$$mdi:gesture-tap-hold$$'}
+- p: [18, 17, 33]
+  k: ^
+- p: [30, 31, 33]
+  k: '6'

@@ -479,7 +479,7 @@ rect.held, rect.combo.held {
 <g transform="translate(616, 147)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">G</text>
+<text x="0" y="-4" class="key tap">H</text>
 <use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:apple-keyboard-option"/>
 </g>
 <g transform="translate(672, 147)" class="key keypos-34">
@@ -646,6 +646,20 @@ rect.held, rect.combo.held {
 <a href="#x_x">
 <text x="224" y="144" class="combo tap layer-activator">2</text>
 </a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="216" y="140" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+</g>
+<g class="combo combopos-1">
+<path d="M392,110 l-66,-15" class="combo"/>
+<path d="M392,110 l-121,-16" class="combo"/>
+<path d="M392,110 l206,34" class="combo"/>
+<rect rx="6" ry="6" x="378" y="97" width="28" height="26" class="combo"/>
+<text x="392" y="110" class="combo tap">^</text>
+</g>
+<g class="combo combopos-2">
+<path d="M392,147 l-121,0" class="combo"/>
+<path d="M392,147 l-65,0" class="combo"/>
+<path d="M392,147 l205,0" class="combo"/>
+<rect rx="6" ry="6" x="378" y="134" width="28" height="26" class="combo"/>
+<text x="392" y="147" class="combo tap">6</text>
 </g>
 </g>
 </g>
@@ -1009,6 +1023,20 @@ rect.held, rect.combo.held {
 <text x="224" y="144" class="combo tap layer-activator">2</text>
 </a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="216" y="140" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
+<g class="combo combopos-1">
+<path d="M392,110 l-66,-15" class="combo"/>
+<path d="M392,110 l-121,-16" class="combo"/>
+<path d="M392,110 l206,34" class="combo"/>
+<rect rx="6" ry="6" x="378" y="97" width="28" height="26" class="combo"/>
+<text x="392" y="110" class="combo tap">^</text>
+</g>
+<g class="combo combopos-2">
+<path d="M392,147 l-121,0" class="combo"/>
+<path d="M392,147 l-65,0" class="combo"/>
+<path d="M392,147 l205,0" class="combo"/>
+<rect rx="6" ry="6" x="378" y="134" width="28" height="26" class="combo"/>
+<text x="392" y="147" class="combo tap">6</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 776)" class="layer-2">
@@ -1352,6 +1380,20 @@ rect.held, rect.combo.held {
 <a href="#x_x">
 <text x="224" y="144" class="combo tap layer-activator">2</text>
 </a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="216" y="140" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+</g>
+<g class="combo combopos-1">
+<path d="M392,110 l-66,-15" class="combo"/>
+<path d="M392,110 l-121,-16" class="combo"/>
+<path d="M392,110 l206,34" class="combo"/>
+<rect rx="6" ry="6" x="378" y="97" width="28" height="26" class="combo"/>
+<text x="392" y="110" class="combo tap">^</text>
+</g>
+<g class="combo combopos-2">
+<path d="M392,147 l-121,0" class="combo"/>
+<path d="M392,147 l-65,0" class="combo"/>
+<path d="M392,147 l205,0" class="combo"/>
+<rect rx="6" ry="6" x="378" y="134" width="28" height="26" class="combo"/>
+<text x="392" y="147" class="combo tap">6</text>
 </g>
 </g>
 </g>
