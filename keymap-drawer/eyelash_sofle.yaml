@@ -215,9 +215,9 @@ layers:
   - {t: $, type: held}
   - '%'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ^, type: held alternate}
+  - ^
   - {t: '&', type: held alternate}
-  - '*'
+  - {t: '*', type: held alternate}
   - (
   - )
   - {t: '$$mdi:transfer$$', type: trans}
@@ -264,5 +264,5 @@ combos:
   k: {t: '2', h: '$$mdi:gesture-tap-hold$$'}
 - p: [16, 17]
   k: {t: '3', h: '$$mdi:gesture-tap-hold$$'}
-- p: [20, 21]
+- p: [21, 22]
   k: {t: '3', h: '$$mdi:gesture-tap-hold$$'}
