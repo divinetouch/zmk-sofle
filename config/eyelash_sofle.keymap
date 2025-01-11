@@ -94,12 +94,7 @@
 
         sticky_layor2 {
             bindings = <&sl 2>;
-            key-positions = <56 57>;
-        };
-
-        sticky_layor2l {
-            bindings = <&sl 2>;
-            key-positions = <56 55>;
+            key-positions = <29 30>;
         };
     };
 
