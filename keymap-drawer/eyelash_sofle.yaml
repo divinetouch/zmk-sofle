@@ -241,10 +241,10 @@ layers:
   - {t: '`', s: '~', type: held}
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '{'
-  - {t: '}', type: held alternate}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}', type: held alternate}
+  - $$mdi:keyboard-esc$$
+  - {t: (, type: held alternate}
+  - )
+  - {t: '0', type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
