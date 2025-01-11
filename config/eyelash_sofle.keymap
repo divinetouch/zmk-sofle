@@ -97,14 +97,9 @@
             key-positions = <29 30>;
         };
 
-        carret {
-            bindings = <&kp CARET>;
-            key-positions = <18 17 33>;
-        };
-
-        number6 {
-            bindings = <&kp NUMBER_6>;
-            key-positions = <30 31 33>;
+        sticky_layer3 {
+            bindings = <&sl 3>;
+            key-positions = <16 17>;
         };
     };
 
@@ -147,6 +142,16 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans                &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp CARET     &kp AMPS      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans                &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans                &trans
+            >;
         };
     };
 };
