@@ -89,17 +89,37 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <20 18>;
+            timeout-ms = <50>;
+        };
+
+        layor3 {
+            bindings = <&sl 3>;
+            key-positions = <41 43>;
+            timeout-ms = <500>;
+        };
+
+        layor3r {
+            bindings = <&sl 3>;
+            key-positions = <47 49>;
+            timeout-ms = <500>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1     &kp N2          &kp N3        &kp N4       &kp N5           &kp UP_ARROW     &kp N6     &kp N7                 &kp N8                 &kp N9                     &kp N0             &kp BACKSPACE
-&kp TAB     &kp Q      &kp W           &kp E         &kp R        &kp T            &kp DOWN_ARROW   &kp Y      &kp U                  &kp I                  &kp O                      &kp P              &kp BSLH
-&kp CAPS    &kp A      &mt LEFT_ALT S  &mt LSHFT D   &mt LCTRL F  &kp G            &kp LEFT_ARROW   &kp H      &hold_homerow RCTRL J  &hold_homerow RSHFT K  &hold_homerow RIGHT_ALT L  &kp SEMI           &kp APOS
-&kp LSHFT   &kp Z      &kp X           &kp C         &kp V        &kp B            &kp RIGHT_ARROW  &kp N      &kp M                  &kp COMMA              &kp DOT                    &kp FSLH           &kp RCTRL
+&kp ESC     &kp N1     &kp N2          &kp N3        &kp N4       &kp N5           &kp UP_ARROW     &kp N6     &kp N7                 &kp N8                 &kp N9                     &kp N0                   &kp BACKSPACE
+&kp TAB     &kp Q      &kp W           &kp E         &kp R        &kp T            &kp DOWN_ARROW   &kp Y      &kp U                  &kp I                  &kp O                      &kp P                    &kp BSLH
+&kp CAPS    &kp A      &mt LEFT_ALT S  &mt LSHFT D   &mt LCTRL F  &kp G            &kp LEFT_ARROW   &kp H      &hold_homerow RCTRL J  &hold_homerow RSHFT K  &hold_homerow RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON  &kp APOS
+&kp LSHFT   &kp Z      &kp X           &kp C         &kp V        &kp B            &kp RIGHT_ARROW  &kp N      &kp M                  &kp COMMA              &kp DOT                    &kp FSLH                 &kp RCTRL
 &kp C_MUTE  &kp LCTRL  &kp LEFT_GUI    &kp LEFT_ALT  &mo 1        &kp BACKSPACE    &kp ENTER        &kp ENTER  &kp SPACE              &mo 2                  &kp RIGHT_SHIFT            &kp RIGHT_COMMAND
             >;
 
