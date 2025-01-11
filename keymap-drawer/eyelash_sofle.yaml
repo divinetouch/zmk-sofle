@@ -27,7 +27,7 @@ layers:
   - P
   - {t: \, s: '|'}
   - $$mdi:apple-keyboard-caps$$
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - A
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: F, h: '$$mdi:apple-keyboard-control$$'}
@@ -37,7 +37,7 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: RIGHT GUI, s: ':'}
+  - {t: ;, s: ':'}
   - .
   - $$mdi:apple-keyboard-shift$$
   - Z
@@ -158,15 +158,15 @@ layers:
   - +
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
-  - {t: OUT BLE, type: held alternate}
+  - OUT BLE
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '-', s: _}
-  - {t: '{', type: held alternate}
+  - '{'
   - '}'
-  - {t: '=', s: +, type: held alternate}
+  - {t: '=', s: +}
   - '{'
   - '}'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -210,15 +210,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
-  - {t: '@', type: held}
+  - '@'
   - '#'
-  - {t: $, type: held}
+  - $
   - '%'
   - {t: '$$mdi:transfer$$', type: trans}
   - ^
-  - {t: '&', type: held alternate}
+  - '&'
   - '*'
-  - {t: (, type: held alternate}
+  - (
   - )
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -259,12 +259,3 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-combos:
-- p: [30, 28]
-  k: {t: '2', h: '$$mdi:gesture-tap-hold$$'}
-- p: [34, 36]
-  k: {t: '2', h: '$$mdi:gesture-tap-hold$$'}
-- p: [15, 17]
-  k: {t: '3', h: '$$mdi:gesture-tap-hold$$'}
-- p: [21, 23]
-  k: {t: '3', h: '$$mdi:gesture-tap-hold$$'}
