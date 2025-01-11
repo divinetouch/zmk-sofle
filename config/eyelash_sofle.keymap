@@ -81,11 +81,25 @@
             label = "ALT_TAB";
         };
 
-        leftgui: leftgui {
+        layor2: leftgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mo 2>;
             label = "LEFTGUI";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        sticky_layor2 {
+            bindings = <&sl 2>;
+            key-positions = <56 57>;
+        };
+
+        sticky_layor2l {
+            bindings = <&sl 2>;
+            key-positions = <56 55>;
         };
     };
 
