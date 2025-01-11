@@ -101,6 +101,11 @@
             bindings = <&sl 3>;
             key-positions = <16 17>;
         };
+
+        sticky_layor3 {
+            bindings = <&sl 3>;
+            key-positions = <20 21>;
+        };
     };
 
     keymap {
@@ -146,11 +151,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans                &trans                 &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp CARET     &kp AMPS      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0           &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans                &trans                 &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans                &trans
+&trans  &trans        &trans        &trans        &trans        &trans         &trans  &trans          &trans           &trans            &trans                &trans                 &trans
+&trans  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT    &trans  &kp CARET       &kp AMPS         &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &trans  &kp NUMBER_6    &kp NUMBER_7     &kp NUMBER_8      &kp NUMBER_9          &kp NUMBER_0           &trans
+&trans  &trans        &trans        &trans        &kp GRAVE     &kp TILDE      &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans                 &trans
+&trans  &trans        &trans        &trans        &trans        &trans         &trans  &trans          &trans           &trans            &trans                &trans
             >;
         };
     };
