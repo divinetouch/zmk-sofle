@@ -218,8 +218,8 @@ layers:
   - ^
   - {t: '&', type: held alternate}
   - '*'
-  - {t: (, type: held alternate}
-  - )
+  - {t: '0', type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '1'
@@ -244,7 +244,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - (
   - )
-  - '0'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
