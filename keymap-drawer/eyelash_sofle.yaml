@@ -153,7 +153,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - (
   - )
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&quit'
   - F11
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
