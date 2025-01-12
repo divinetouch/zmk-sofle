@@ -86,9 +86,9 @@ layers:
   - '&mkp MB4'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
-  - END
-  - $$mdi:arrow-up-bold$$
-  - HOME
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - '&copy'
+  - '&paste'
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -98,9 +98,9 @@ layers:
   - '&control_space'
   - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - PG DN
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
@@ -148,7 +148,7 @@ layers:
   - BT CLR ALL
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+$$mdi:keyboard-tab$$
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:keyboard-tab$$
   - (
@@ -210,15 +210,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
-  - '@'
+  - {t: '@', type: held}
   - '#'
-  - $
+  - {t: $, type: held}
   - '%'
   - {t: '$$mdi:transfer$$', type: trans}
   - ^
-  - '&'
+  - {t: '&', type: held alternate}
   - '*'
-  - (
+  - {t: (, type: held alternate}
   - )
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -236,15 +236,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
-  - {t: (, type: held alternate}
+  - (
   - )
-  - {t: '0', type: held alternate}
+  - '0'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -260,9 +260,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [41, 43]
+- p: [15, 17]
   k: {t: '3', h: '$$mdi:gesture-tap-hold$$'}
-- p: [47, 49]
+- p: [21, 23]
   k: {t: '3', h: '$$mdi:gesture-tap-hold$$'}
 - p: [30, 28]
   k: {t: '2', h: '$$mdi:gesture-tap-hold$$'}
