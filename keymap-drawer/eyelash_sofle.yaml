@@ -93,8 +93,8 @@ layers:
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&alt_tab'
+  - '&control_c'
+  - {t: '$$mdi:backspace$$', type: backspace}
   - '&control_space'
   - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
