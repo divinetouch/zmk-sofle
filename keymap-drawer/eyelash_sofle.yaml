@@ -85,7 +85,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB4'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:keyboard-tab$$', h: toggle}
+  - {t: 'Gui+$$mdi:keyboard-tab$$', h: toggle}
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&copy'
   - '&paste'
