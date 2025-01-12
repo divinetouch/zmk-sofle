@@ -81,7 +81,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
   - '&copy'
-  - '&paste'
+  - '&control_c'
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB4'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -93,7 +93,7 @@ layers:
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
-  - '&control_c'
+  - '&save'
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&control_space'
   - '&mkp MB5'
@@ -114,7 +114,7 @@ layers:
   - RGB BRI
   - RGB BRD
   - Ins
-  - F11
+  - $$mdi:backspace-reverse-outline$$
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
