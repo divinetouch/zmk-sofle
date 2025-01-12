@@ -80,12 +80,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
-  - '&copy'
+  - $$mdi:apple-keyboard-command$$
   - '&control_c'
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB4'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: 'Gui+$$mdi:keyboard-tab$$', h: toggle}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&copy'
   - '&paste'
