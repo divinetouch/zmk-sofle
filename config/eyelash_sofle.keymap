@@ -123,33 +123,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        layor3 {
-            bindings = <&sl 3>;
-            key-positions = <15 17>;
-            timeout-ms = <500>;
-        };
-
-        layor3r {
-            bindings = <&sl 3>;
-            key-positions = <21 23>;
-            timeout-ms = <500>;
-        };
-
-        layor2l {
-            bindings = <&sl 2>;
-            key-positions = <30 28>;
-            timeout-ms = <500>;
-        };
-
-        layor2r {
-            bindings = <&sl 2>;
-            key-positions = <34 36>;
-            timeout-ms = <500>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -171,7 +145,7 @@
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8        &kp F9      &kp F10     &trans
 &trans      &kp GRAVE        &kp LEFT_GUI    &control_c       &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp TAB          &kp BACKSPACE    &copy         &paste      &kp MINUS   &kp EQUAL
-&trans      &kp TILDE        &save           &kp BACKSPACE    &control_space   &mkp MB5           &mmv MOVE_LEFT   &kp LEFT_ARROW   &kp DOWN         &kp UP_ARROW  &kp RIGHT   &control_a  &kp RIGHT_BRACKET
+&trans      &kp TILDE        &mo 3           &mo 2            &control_space   &mkp MB5           &mmv MOVE_LEFT   &kp LEFT_ARROW   &kp DOWN         &kp UP_ARROW  &kp RIGHT   &control_a  &kp RIGHT_BRACKET
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT    &kp DELETE  &kp F12     &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &control_c       &kp ENTER        &trans        &trans      &trans
             >;
@@ -194,11 +168,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans         &trans  &trans        &trans                &trans                 &trans        &trans        &trans
-&trans  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT    &trans  &kp CARET     &kp AMPS              &kp ASTERISK           &kp NUMBER_0  &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &trans  &kp NUMBER_6  &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &trans        &trans        &trans        &kp GRAVE     &kp TILDE      &trans  &kp ESCAPE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &trans        &trans
-&trans  &trans        &trans        &trans        &trans        &trans         &trans  &trans        &trans                &trans                 &trans        &trans
+&trans  &trans        &trans        &trans        &trans        &trans         &trans  &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT    &trans  &kp CARET     &kp AMPS      &kp ASTERISK  &kp NUMBER_0  &trans        &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &trans        &trans        &trans        &kp GRAVE     &kp TILDE      &trans  &kp ESCAPE    &mo 3         &mo 1         &trans        &trans        &trans
+&trans  &trans        &trans        &trans        &trans        &trans         &trans  &trans        &trans        &trans        &trans        &trans
             >;
         };
     };
