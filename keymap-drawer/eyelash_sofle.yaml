@@ -93,8 +93,8 @@ layers:
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
-  - '&save'
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - '3'
+  - '2'
   - '&control_space'
   - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -158,15 +158,15 @@ layers:
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
-  - {t: OUT BLE, type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - OUT BLE
   - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '-', s: _}
-  - {t: '{', type: held alternate}
+  - '{'
   - '}'
-  - {t: '=', s: +, type: held alternate}
+  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -186,7 +186,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -210,20 +210,20 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
-  - {t: '@', type: held}
+  - '@'
   - '#'
-  - {t: $, type: held}
+  - $
   - '%'
   - {t: '$$mdi:transfer$$', type: trans}
   - ^
-  - {t: '&', type: held alternate}
+  - '&'
   - '*'
-  - {t: '0', type: held alternate}
+  - '0'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '1'
-  - '2'
+  - {t: '2', type: held}
   - '3'
   - '4'
   - {t: '5', s: '%'}
@@ -242,8 +242,8 @@ layers:
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
-  - (
-  - )
+  - '3'
+  - layer1
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -251,6 +251,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -258,13 +259,3 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-combos:
-- p: [15, 17]
-  k: {t: '3', h: '$$mdi:gesture-tap-hold$$'}
-- p: [21, 23]
-  k: {t: '3', h: '$$mdi:gesture-tap-hold$$'}
-- p: [30, 28]
-  k: {t: '2', h: '$$mdi:gesture-tap-hold$$'}
-- p: [34, 36]
-  k: {t: '2', h: '$$mdi:gesture-tap-hold$$'}
