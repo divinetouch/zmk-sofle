@@ -114,6 +114,13 @@
             bindings = <&kp LG(S)>;
             label = "SAVE";
         };
+
+        control_a: control_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A)>;
+            label = "CONTROL_A";
+        };
     };
 
     combos {
@@ -162,10 +169,10 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8        &kp F9      &kp F10           &trans
-&trans      &kp GRAVE        &kp LEFT_GUI    &control_c       &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp TAB          &kp BACKSPACE    &copy         &paste      &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &save           &kp BACKSPACE    &control_space   &mkp MB5           &mmv MOVE_LEFT   &kp LEFT_ARROW   &kp DOWN         &kp UP_ARROW  &kp RIGHT   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT    &kp DELETE  &kp F12           &trans
+&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8        &kp F9      &kp F10     &trans
+&trans      &kp GRAVE        &kp LEFT_GUI    &control_c       &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp TAB          &kp BACKSPACE    &copy         &paste      &kp MINUS   &kp EQUAL
+&trans      &kp TILDE        &save           &kp BACKSPACE    &control_space   &mkp MB5           &mmv MOVE_LEFT   &kp LEFT_ARROW   &kp DOWN         &kp UP_ARROW  &kp RIGHT   &control_a  &kp RIGHT_BRACKET
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT    &kp DELETE  &kp F12     &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &control_c       &kp ENTER        &trans        &trans      &trans
             >;
 
