@@ -218,8 +218,8 @@ layers:
   - ^
   - '&'
   - '*'
-  - {t: '0', type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: (, type: held alternate}
+  - )
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '1'
