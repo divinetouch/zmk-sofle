@@ -53,9 +53,9 @@
         bindings = <&sk>, <&kp>;
 
         #binding-cells = <2>;
-        hold-trigger-key-positions = <28 29 30 31 33 34 35 36>;
+        hold-trigger-key-positions = <28 29 30 31 34 35 36 37>;
         tapping-term-ms = <200>;
-        flavor = "balanced";
+        flavor = "tap-preferred";
     };
 
     macros {
@@ -137,11 +137,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1     &kp N2                    &kp N3                 &kp N4                 &kp N5                  &kp UP_ARROW     &kp N6     &kp N7                 &kp N8                 &kp N9                     &kp N0                        &kp BACKSPACE
-&kp TAB     &kp Q      &kp W                     &kp E                  &kp R                  &kp T                   &kp DOWN_ARROW   &kp Y      &kp U                  &kp I                  &kp O                      &kp P                         &kp BSLH
-&kp CAPS    &kp A      &hold_homerow LEFT_ALT S  &hold_homerow LSHFT D  &hold_homerow LCTRL F  &hold_homerow LGUI G    &kp LEFT_ARROW   &kp H      &hold_homerow RCTRL J  &hold_homerow RSHFT K  &hold_homerow RIGHT_ALT L  &hold_homerow RGUI SEMICOLON  &kp APOS
-&kp LSHFT   &kp Z      &kp X                     &kp C                  &kp V                  &kp B                   &kp RIGHT_ARROW  &kp N      &kp M                  &kp COMMA              &kp DOT                    &kp FSLH                      &kp RCTRL
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI              &kp LEFT_ALT           &mo 1                  &kp BACKSPACE           &kp ENTER        &kp ENTER  &kp SPACE              &mo 2                  &kp RIGHT_SHIFT            &kp RIGHT_COMMAND
+&kp ESC     &kp N1     &kp N2                    &kp N3                 &kp N4                 &kp N5           &kp UP_ARROW     &kp N6     &kp N7                 &kp N8                 &kp N9                     &kp N0                        &kp BACKSPACE
+&kp TAB     &kp Q      &kp W                     &kp E                  &kp R                  &kp T            &kp DOWN_ARROW   &kp Y      &kp U                  &kp I                  &kp O                      &kp P                         &kp BSLH
+&kp CAPS    &kp A      &hold_homerow LEFT_ALT S  &hold_homerow LSHFT D  &hold_homerow LCTRL F  &kp G            &kp LEFT_ARROW   &kp H      &hold_homerow RCTRL J  &hold_homerow RSHFT K  &hold_homerow RIGHT_ALT L  &hold_homerow RGUI SEMICOLON  &kp APOS
+&kp LSHFT   &kp Z      &kp X                     &kp C                  &kp V                  &kp B            &kp RIGHT_ARROW  &kp N      &kp M                  &kp COMMA              &kp DOT                    &kp FSLH                      &kp RCTRL
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI              &kp LEFT_ALT           &mo 1                  &kp BACKSPACE    &kp ENTER        &kp ENTER  &kp SPACE              &mo 2                  &kp RIGHT_SHIFT            &kp RIGHT_COMMAND
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
