@@ -153,7 +153,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - (
   - )
-  - '&quit'
+  - '3'
   - F11
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
@@ -218,13 +218,13 @@ layers:
   - ^
   - '&'
   - '*'
-  - '0'
+  - {t: '0', type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '1'
   - {t: '2', type: held}
-  - '3'
+  - {t: '3', type: held alternate}
   - '4'
   - {t: '5', s: '%'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -242,9 +242,9 @@ layers:
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
-  - {t: '3', type: held alternate}
-  - {t: layer1, type: held alternate}
-  - {type: held alternate}
+  - '3'
+  - layer1
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -256,9 +256,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-combos:
-- p: [47, 48, 49]
-  k: '3'
