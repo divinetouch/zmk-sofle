@@ -173,8 +173,8 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
+  - '~'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - _
   - {t: '[', s: '{'}
