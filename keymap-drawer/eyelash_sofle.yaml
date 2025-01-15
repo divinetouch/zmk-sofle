@@ -242,8 +242,8 @@ layers:
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
-  - '3'
-  - {t: layer1, type: held alternate}
+  - '~'
+  - {t: '`', s: '~', type: held alternate}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
