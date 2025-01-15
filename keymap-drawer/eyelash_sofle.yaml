@@ -79,7 +79,7 @@ layers:
   - F10
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-command$$
   - '&control_c'
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -92,7 +92,7 @@ layers:
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: layer1, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '3', h: '3'}
   - {t: '2', h: '2'}
   - '&control_space'
@@ -259,3 +259,6 @@ layers:
   - {t: LAYER0, h: toggle, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [56, 27]
+  k: {t: layer1, h: toggle}
