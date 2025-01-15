@@ -92,7 +92,7 @@ layers:
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: layer1, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: layer1, h: toggle}
   - {t: '3', h: '3'}
   - {t: '2', h: '2'}
   - '&control_space'
@@ -121,7 +121,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LAYER0, h: toggle, type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - '&control_c'
