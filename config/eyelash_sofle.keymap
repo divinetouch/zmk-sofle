@@ -61,7 +61,7 @@
     sticky_layer: sticky_layer {
         compatible = "zmk,behavior-hold-tap";
         label = "STICKY_LAYER";
-        bindings = <&mo>, <&sl>;
+        bindings = <&mo>, <&tog>;
 
         #binding-cells = <2>;
         hold-trigger-key-positions = <56 61>;
