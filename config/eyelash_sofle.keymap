@@ -141,7 +141,15 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        tolayer1 {
+            bindings = <&to 1>;
+            key-positions = <56 27>;
+            timeout-ms = <100>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -162,8 +170,8 @@
         layer_1 {
             bindings = <
 &kp GRAVE   &kp F1           &kp F2             &kp F3             &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8        &kp F9     &kp F10    &trans
-&trans      &kp GRAVE        &kp LEFT_GUI       &control_c         &kp BACKSPACE    &control_tab       &mmv MOVE_DOWN   &kp TAB          &kp BACKSPACE    &copy         &paste     &kp MINUS  &kp EQUAL
-&trans      &tog 1           &sticky_layer 3 3  &sticky_layer 2 2  &control_space   &control_a         &mmv MOVE_LEFT   &kp LEFT_ARROW   &kp DOWN         &kp UP_ARROW  &kp RIGHT  &kp ENTER  &kp RIGHT_BRACKET
+&trans      &trans           &kp LEFT_GUI       &control_c         &kp BACKSPACE    &control_tab       &mmv MOVE_DOWN   &kp TAB          &kp BACKSPACE    &copy         &paste     &kp MINUS  &kp EQUAL
+&trans      &trans           &sticky_layer 3 3  &sticky_layer 2 2  &control_space   &control_a         &mmv MOVE_LEFT   &kp LEFT_ARROW   &kp DOWN         &kp UP_ARROW  &kp RIGHT  &kp ENTER  &kp RIGHT_BRACKET
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON     &rgb_ug RGB_EFF    &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &mo 2         &mo 3      &kp F12    &trans
 &kp C_MUTE  &trans           &trans             &trans             &trans           &trans             &mkp LCLK        &control_c       &kp ENTER        &trans        &trans     &trans
             >;
