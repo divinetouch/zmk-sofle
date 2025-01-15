@@ -96,7 +96,7 @@ layers:
   - {t: '3', h: '3'}
   - {t: '2', h: '2'}
   - '&control_space'
-  - '&mkp MB5'
+  - '&control_a'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
