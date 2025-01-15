@@ -141,7 +141,7 @@
 &kp TAB     &kp Q      &kp W                     &kp E                  &kp R                  &kp T              &kp DOWN_ARROW   &kp Y      &kp U                  &kp I                  &kp O                      &kp P                         &kp BSLH
 &kp CAPS    &kp A      &hold_homerow LEFT_ALT S  &hold_homerow LSHFT D  &hold_homerow LCTRL F  &mt LEFT_META G    &kp LEFT_ARROW   &kp H      &hold_homerow RCTRL J  &hold_homerow RSHFT K  &hold_homerow RIGHT_ALT L  &hold_homerow RGUI SEMICOLON  &kp APOS
 &kp LSHFT   &kp Z      &kp X                     &kp C                  &kp V                  &kp B              &kp RIGHT_ARROW  &kp N      &kp M                  &kp COMMA              &kp DOT                    &kp FSLH                      &kp RIGHT_SHIFT
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI              &kp LEFT_ALT           &mo 1                  &kp LEFT_SHIFT     &kp ENTER        &kp ENTER  &kp SPACE              &mo 2                  &kp RIGHT_SHIFT            &kp RIGHT_COMMAND
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI              &kp LEFT_ALT           &mo 1                  &kp LEFT_SHIFT     &kp ENTER        &kp ENTER  &kp SPACE              &mo 1                  &kp RIGHT_SHIFT            &kp RIGHT_COMMAND
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -150,11 +150,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8        &kp F9      &kp F10    &trans
-&trans      &kp GRAVE        &kp LEFT_GUI    &control_c       &kp BACKSPACE    &control_tab       &mmv MOVE_DOWN   &kp TAB          &kp BACKSPACE    &copy         &paste      &kp MINUS  &kp EQUAL
-&trans      &kp TILDE        &mo 3           &mo 2            &control_space   &mkp MB5           &mmv MOVE_LEFT   &kp LEFT_ARROW   &kp DOWN         &kp UP_ARROW  &kp RIGHT   &kp ENTER  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT    &kp DELETE  &kp F12    &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &control_c       &kp ENTER        &trans        &trans      &trans
+&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8        &kp F9     &kp F10    &trans
+&trans      &kp GRAVE        &kp LEFT_GUI    &control_c       &kp BACKSPACE    &control_tab       &mmv MOVE_DOWN   &kp TAB          &kp BACKSPACE    &copy         &paste     &kp MINUS  &kp EQUAL
+&trans      &kp TILDE        &mo 3           &mo 2            &control_space   &mkp MB5           &mmv MOVE_LEFT   &kp LEFT_ARROW   &kp DOWN         &kp UP_ARROW  &kp RIGHT  &kp ENTER  &kp RIGHT_BRACKET
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &mo 2         &mo 3      &kp F12    &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &control_c       &kp ENTER        &trans        &trans     &trans
             >;
 
             display-name = "layer1";
