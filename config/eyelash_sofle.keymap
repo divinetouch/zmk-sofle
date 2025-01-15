@@ -54,7 +54,7 @@
 
         #binding-cells = <2>;
         hold-trigger-key-positions = <28 29 30 31 34 35 36 37>;
-        tapping-term-ms = <200>;
+        tapping-term-ms = <350>;
         flavor = "tap-preferred";
     };
 
