@@ -92,7 +92,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&save'
   - {t: '3', h: '3'}
   - {t: '2', h: '2'}
   - '&control_space'
@@ -327,3 +327,9 @@ layers:
 combos:
 - p: [27, 56]
   k: '&save'
+- p: [56, 29]
+  k: {t: '2', h: toggle}
+- p: [56, 28]
+  k: {t: '3', h: toggle}
+- p: [56, 41]
+  k: {t: '4', h: toggle}
