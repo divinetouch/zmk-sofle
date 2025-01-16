@@ -327,3 +327,5 @@ layers:
 combos:
 - p: [56, 27]
   k: {t: layer1, h: toggle}
+- p: [31, 28]
+  k: '&save'
