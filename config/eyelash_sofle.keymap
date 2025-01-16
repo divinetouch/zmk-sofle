@@ -54,10 +54,10 @@
 
         #binding-cells = <2>;
         hold-trigger-key-positions = <28 29 30 31 34 35 36 37>;
-        tapping-term-ms = <250>;
+        tapping-term-ms = <200>;
         flavor = "tap-preferred";
-        quick-tap-ms = <0>;
-        require-prior-idle-ms = <200>;
+        quick-tap-ms = <200>;
+        require-prior-idle-ms = <125>;
     };
 
     sticky_layer: sticky_layer {
