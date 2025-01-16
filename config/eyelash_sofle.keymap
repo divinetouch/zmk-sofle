@@ -160,17 +160,17 @@
         };
 
         layer2 {
-            bindings = <&to 2>;
+            bindings = <&sticky_layer 2 2>;
             key-positions = <56 29>;
         };
 
         layer3 {
-            bindings = <&to 3>;
+            bindings = <&sticky_layer 3 3>;
             key-positions = <56 28>;
         };
 
         layer4 {
-            bindings = <&to 4>;
+            bindings = <&sticky_layer 4 4>;
             key-positions = <56 41>;
         };
     };
