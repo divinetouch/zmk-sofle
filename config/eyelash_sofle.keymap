@@ -154,14 +154,14 @@
             bindings = <&sticky_layer 2 2>;
             key-positions = <56 29>;
             timeout-ms = <100>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         layer3 {
             bindings = <&sticky_layer 3 3>;
             key-positions = <56 28>;
             timeout-ms = <100>;
-            layers = <0>;
+            layers = <0 1>;
         };
     };
 
