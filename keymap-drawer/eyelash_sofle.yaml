@@ -325,7 +325,5 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [56, 27]
-  k: {t: layer1, h: toggle}
-- p: [31, 28]
+- p: [27, 56]
   k: '&save'
