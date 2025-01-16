@@ -92,9 +92,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: layer1, h: toggle}
+  - {t: '3', h: '3'}
+  - {t: '2', h: '2'}
   - '&control_space'
   - '&control_a'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -106,7 +106,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '4', h: '4'}
   - '&copy'
   - '&paste'
   - {t: \, s: '|'}
@@ -218,13 +218,13 @@ layers:
   - ^
   - '&'
   - '*'
-  - {t: (, type: held}
+  - {t: (, type: held alternate}
   - )
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '1'
-  - {t: '2', type: held alternate}
-  - '3'
+  - {t: '2', type: held}
+  - {t: '3', type: held alternate}
   - '4'
   - {t: '5', s: '%'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -251,12 +251,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: LAYER0, h: toggle}
-  - {t: LAYER0, h: toggle, type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: LAYER0, h: toggle, type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: LAYER0, h: toggle, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   '4':
@@ -280,7 +280,7 @@ layers:
   - RGB EFR
   - RGB SPI
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {type: held alternate}
   - '1'
   - '2'
   - '3'
@@ -289,7 +289,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: held alternate}
   - RGB BRI
   - RGB BRD
   - {t: '$$mdi:transfer$$', type: trans}
@@ -301,7 +301,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - BT CLR ALL
+  - {t: BT CLR ALL, type: held}
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -316,20 +316,11 @@ layers:
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LAYER0, h: toggle}
+  - {t: LAYER0, h: toggle, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-combos:
-- p: [56, 27]
-  k: {t: layer1, h: toggle}
-- p: [56, 29]
-  k: {t: '2', h: '2'}
-  l: [LAYER0, layer1]
-- p: [56, 28]
-  k: {t: '3', h: '3'}
-  l: [LAYER0, layer1]
