@@ -653,8 +653,11 @@ rect.held, rect.combo.held {
 <path d="M199,226 l-99,-49" class="combo"/>
 <path d="M199,226 l99,49" class="combo"/>
 <rect rx="6" ry="6" x="185" y="213" width="28" height="26" class="combo"/>
-<text x="199" y="226" class="combo tap">&amp;save</text>
-</g>
+<a href="#layer1">
+<text x="199" y="226" class="combo tap layer-activator">layer1</text>
+</a><a href="#layer1">
+<text x="199" y="237" class="combo hold layer-activator">layer1</text>
+</a></g>
 <g class="combo combopos-1">
 <path d="M255,212 l47,57" class="combo"/>
 <path d="M255,212 l-47,-57" class="combo"/>
@@ -826,11 +829,14 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(84, 168)" class="key keypos-27">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">&amp;save</text>
-</g>
+<g transform="translate(84, 168)" class="key held alternate keypos-27">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held alternate side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held alternate"/>
+<a href="#layer1">
+<text x="0" y="-4" class="key held alternate tap layer-activator">layer1</text>
+</a><a href="#layer1">
+<text x="0" y="24" class="key held alternate hold layer-activator">layer1</text>
+</a></g>
 <g transform="translate(140, 147)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
@@ -1026,8 +1032,11 @@ rect.held, rect.combo.held {
 <path d="M199,226 l-99,-49" class="combo"/>
 <path d="M199,226 l99,49" class="combo"/>
 <rect rx="6" ry="6" x="185" y="213" width="28" height="26" class="combo"/>
-<text x="199" y="226" class="combo tap">&amp;save</text>
-</g>
+<a href="#layer1">
+<text x="199" y="226" class="combo tap layer-activator">layer1</text>
+</a><a href="#layer1">
+<text x="199" y="237" class="combo hold layer-activator">layer1</text>
+</a></g>
 <g class="combo combopos-1">
 <path d="M255,212 l47,57" class="combo"/>
 <path d="M255,212 l-47,-57" class="combo"/>
@@ -1148,6 +1157,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">1</text>
+<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:apple-keyboard-command"/>
 </g>
 <g transform="translate(196, 84)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1161,10 +1171,10 @@ rect.held, rect.combo.held {
 <a href="#x_x">
 <text x="0" y="-4" class="key tap layer-activator">3</text>
 </a></g>
-<g transform="translate(308, 91)" class="key trans keypos-18">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(308, 91)" class="key keypos-18">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
 </g>
 <g transform="translate(462, 147)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1412,8 +1422,11 @@ rect.held, rect.combo.held {
 <path d="M199,226 l-99,-49" class="combo"/>
 <path d="M199,226 l99,49" class="combo"/>
 <rect rx="6" ry="6" x="185" y="213" width="28" height="26" class="combo"/>
-<text x="199" y="226" class="combo tap">&amp;save</text>
-</g>
+<a href="#layer1">
+<text x="199" y="226" class="combo tap layer-activator">layer1</text>
+</a><a href="#layer1">
+<text x="199" y="237" class="combo hold layer-activator">layer1</text>
+</a></g>
 <g class="combo combopos-1">
 <path d="M255,212 l47,57" class="combo"/>
 <path d="M255,212 l-47,-57" class="combo"/>
@@ -1782,8 +1795,11 @@ rect.held, rect.combo.held {
 <path d="M199,226 l-99,-49" class="combo"/>
 <path d="M199,226 l99,49" class="combo"/>
 <rect rx="6" ry="6" x="185" y="213" width="28" height="26" class="combo"/>
-<text x="199" y="226" class="combo tap">&amp;save</text>
-</g>
+<a href="#layer1">
+<text x="199" y="226" class="combo tap layer-activator">layer1</text>
+</a><a href="#layer1">
+<text x="199" y="237" class="combo hold layer-activator">layer1</text>
+</a></g>
 <g class="combo combopos-1">
 <path d="M255,212 l47,57" class="combo"/>
 <path d="M255,212 l-47,-57" class="combo"/>
@@ -2173,8 +2189,11 @@ rect.held, rect.combo.held {
 <path d="M199,226 l-99,-49" class="combo"/>
 <path d="M199,226 l99,49" class="combo"/>
 <rect rx="6" ry="6" x="185" y="213" width="28" height="26" class="combo"/>
-<text x="199" y="226" class="combo tap">&amp;save</text>
-</g>
+<a href="#layer1">
+<text x="199" y="226" class="combo tap layer-activator">layer1</text>
+</a><a href="#layer1">
+<text x="199" y="237" class="combo hold layer-activator">layer1</text>
+</a></g>
 <g class="combo combopos-1">
 <path d="M255,212 l47,57" class="combo"/>
 <path d="M255,212 l-47,-57" class="combo"/>

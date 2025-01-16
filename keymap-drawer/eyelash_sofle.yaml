@@ -92,7 +92,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&save'
+  - {t: layer1, h: layer1, type: held alternate}
   - {t: '3', h: '3'}
   - {t: '2', h: '2'}
   - '&control_space'
@@ -145,10 +145,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '1'
+  - {t: '1', h: '$$mdi:apple-keyboard-command$$'}
   - '2'
   - '3'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '4', h: '4'}
   - (
@@ -326,7 +326,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [27, 56]
-  k: '&save'
+  k: {t: layer1, h: layer1}
 - p: [56, 29]
   k: {t: '2', h: '2'}
 - p: [56, 28]
