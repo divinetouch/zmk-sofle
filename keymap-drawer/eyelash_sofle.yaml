@@ -329,7 +329,7 @@ combos:
   k: {t: layer1, h: toggle}
 - p: [56, 29]
   k: {t: '2', h: '2'}
-  l: [LAYER0]
+  l: [LAYER0, layer1]
 - p: [56, 28]
   k: {t: '3', h: '3'}
-  l: [LAYER0]
+  l: [LAYER0, layer1]
