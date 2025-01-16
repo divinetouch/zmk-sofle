@@ -154,14 +154,9 @@
     combos {
         compatible = "zmk,combos";
 
-        layer1 {
-            bindings = <&to 1>;
-            key-positions = <56 27>;
-        };
-
         save {
             bindings = <&save>;
-            key-positions = <31 28>;
+            key-positions = <27 56>;
         };
     };
 
