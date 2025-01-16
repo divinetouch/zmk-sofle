@@ -141,29 +141,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        tolayer1 {
-            bindings = <&to 1>;
-            key-positions = <56 27>;
-            timeout-ms = <100>;
-        };
-
-        layer2 {
-            bindings = <&sticky_layer 2 2>;
-            key-positions = <56 29>;
-            timeout-ms = <100>;
-            layers = <0 1>;
-        };
-
-        layer3 {
-            bindings = <&sticky_layer 3 3>;
-            key-positions = <56 28>;
-            timeout-ms = <100>;
-            layers = <0 1>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -183,11 +161,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1  &kp F2        &kp F3      &kp F4          &kp F5           &mmv MOVE_UP     &kp F6          &kp F7         &kp F8        &kp F9     &kp F10    &trans
-&trans      &trans  &kp LEFT_GUI  &control_c  &kp BACKSPACE   &control_tab     &mmv MOVE_DOWN   &kp TAB         &kp BACKSPACE  &kp EQUAL     &kp PLUS   &trans     &trans
-&trans      &trans  &trans        &trans      &control_space  &control_a       &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp ENTER  &trans
-&trans      &trans  &trans        &copy       &paste          &kp BACKSLASH    &mmv MOVE_RIGHT  &kp COLON       &kp PIPE       &kp AMPS      &kp STAR   &kp F12    &trans
-&kp C_MUTE  &trans  &trans        &trans      &trans          &trans           &mkp LCLK        &control_c      &kp ENTER      &trans        &trans     &trans
+&kp GRAVE   &kp F1  &kp F2             &kp F3             &kp F4          &kp F5           &mmv MOVE_UP     &kp F6          &kp F7         &kp F8        &kp F9     &kp F10    &trans
+&trans      &trans  &kp LEFT_GUI       &control_c         &kp BACKSPACE   &control_tab     &mmv MOVE_DOWN   &kp TAB         &kp BACKSPACE  &kp EQUAL     &kp PLUS   &trans     &trans
+&trans      &to 1   &sticky_layer 3 3  &sticky_layer 2 2  &control_space  &control_a       &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp ENTER  &trans
+&trans      &trans  &sticky_layer 4 4  &copy              &paste          &kp BACKSLASH    &mmv MOVE_RIGHT  &kp COLON       &kp PIPE       &kp AMPS      &kp STAR   &kp F12    &trans
+&kp C_MUTE  &trans  &trans             &trans             &trans          &trans           &mkp LCLK        &control_c      &kp ENTER      &trans        &trans     &trans
             >;
 
             display-name = "layer1";
