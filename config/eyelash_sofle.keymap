@@ -148,6 +148,11 @@
             bindings = <&to 1>;
             key-positions = <56 27>;
         };
+
+        save {
+            bindings = <&save>;
+            key-positions = <31 28>;
+        };
     };
 
     keymap {
