@@ -170,11 +170,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1                    &kp N2                    &kp N3                 &kp N4                 &kp N5                      &kp UP_ARROW     &kp N6                     &kp N7                 &kp N8                 &kp N9                     &kp N0                        &kp BACKSPACE
-&kp TAB     &kp Q                     &kp W                     &kp E                  &kp R                  &kp T                       &kp DOWN_ARROW   &kp Y                      &kp U                  &kp I                  &kp O                      &kp P                         &kp BSLH
-&kp CAPS    &hold_homerow LEFT_GUI A  &hold_homerow LEFT_ALT S  &hold_homerow LSHFT D  &hold_homerow LCTRL F  &hold_homerow LEFT_GUI G    &kp LEFT_ARROW   &hold_homerow RIGHT_GUI H  &hold_homerow RCTRL J  &hold_homerow RSHFT K  &hold_homerow RIGHT_ALT L  &hold_homerow RGUI SEMICOLON  &kp APOS
-&kp LSHFT   &kp Z                     &kp X                     &kp C                  &kp V                  &kp B                       &kp RIGHT_ARROW  &kp N                      &kp M                  &kp COMMA              &kp DOT                    &kp FSLH                      &kp RIGHT_SHIFT
-&kp C_MUTE  &kp LCTRL                 &kp LEFT_GUI              &kp LEFT_ALT           &sticky_layer1 1 1     &kp LEFT_SHIFT              &kp ENTER        &kp ENTER                  &kp SPACE              &sticky_layer 2 2      &kp RIGHT_SHIFT            &kp RIGHT_COMMAND
+&kp ESC     &kp N1                    &kp N2                    &kp N3                 &kp N4                 &kp N5            &kp UP_ARROW     &kp N6     &kp N7                 &kp N8                 &kp N9                     &kp N0                        &kp BACKSPACE
+&kp TAB     &kp Q                     &kp W                     &kp E                  &kp R                  &kp T             &kp DOWN_ARROW   &kp Y      &kp U                  &kp I                  &kp O                      &kp P                         &kp BSLH
+&kp CAPS    &hold_homerow LEFT_GUI A  &hold_homerow LEFT_ALT S  &hold_homerow LSHFT D  &hold_homerow LCTRL F  &kp G             &kp LEFT_ARROW   &kp H      &hold_homerow RCTRL J  &hold_homerow RSHFT K  &hold_homerow RIGHT_ALT L  &hold_homerow RGUI SEMICOLON  &kp APOS
+&kp LSHFT   &kp Z                     &kp X                     &kp C                  &kp V                  &kp B             &kp RIGHT_ARROW  &kp N      &kp M                  &kp COMMA              &kp DOT                    &kp FSLH                      &kp RIGHT_SHIFT
+&kp C_MUTE  &kp LCTRL                 &kp LEFT_GUI              &kp LEFT_ALT           &sticky_layer1 1 1     &kp LEFT_SHIFT    &kp ENTER        &kp ENTER  &kp SPACE              &sticky_layer 2 2      &kp RIGHT_SHIFT            &kp RIGHT_COMMAND
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
