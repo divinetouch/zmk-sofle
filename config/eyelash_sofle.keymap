@@ -157,7 +157,7 @@
         compatible = "zmk,combos";
 
         save {
-            bindings = <&save>;
+            bindings = <&sticky_layer 1 1>;
             key-positions = <27 56>;
         };
 
@@ -195,11 +195,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1  &kp F2             &kp F3             &kp F4          &kp F5           &mmv MOVE_UP     &kp F6          &kp F7         &kp F8        &kp F9     &kp F10    &trans
-&trans      &trans  &kp LEFT_GUI       &control_c         &kp BACKSPACE   &control_tab     &mmv MOVE_DOWN   &kp TAB         &kp BACKSPACE  &kp EQUAL     &kp PLUS   &trans     &trans
-&trans      &save   &sticky_layer 3 3  &sticky_layer 2 2  &control_space  &control_a       &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp ENTER  &trans
-&trans      &trans  &sticky_layer 4 4  &copy              &paste          &kp BACKSLASH    &mmv MOVE_RIGHT  &kp COLON       &kp PIPE       &kp AMPS      &kp STAR   &kp F12    &trans
-&kp C_MUTE  &trans  &trans             &trans             &trans          &trans           &mkp LCLK        &kp SPACE       &kp ENTER      &trans        &trans     &trans
+&kp GRAVE   &kp F1             &kp F2             &kp F3             &kp F4          &kp F5           &mmv MOVE_UP     &kp F6          &kp F7         &kp F8        &kp F9     &kp F10    &trans
+&trans      &trans             &kp LEFT_GUI       &control_c         &kp BACKSPACE   &control_tab     &mmv MOVE_DOWN   &kp TAB         &kp BACKSPACE  &kp EQUAL     &kp PLUS   &trans     &trans
+&trans      &sticky_layer 1 1  &sticky_layer 3 3  &sticky_layer 2 2  &control_space  &control_a       &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp ENTER  &trans
+&trans      &trans             &sticky_layer 4 4  &copy              &paste          &kp BACKSLASH    &mmv MOVE_RIGHT  &kp COLON       &kp PIPE       &kp AMPS      &kp STAR   &kp F12    &trans
+&kp C_MUTE  &trans             &trans             &trans             &trans          &trans           &mkp LCLK        &kp SPACE       &kp ENTER      &trans        &trans     &trans
             >;
 
             display-name = "layer1";
@@ -208,11 +208,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &mmv MOVE_UP     &kp F6             &kp F7                &kp F8                 &kp F9             &kp F10      &trans
-&trans     &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &mmv MOVE_DOWN   &sticky_layer 4 4  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &sticky_layer 3 3  &kp F11      &kp F12
-&trans     &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans           &mmv MOVE_LEFT   &kp MINUS          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL          &trans       &trans
-&trans     &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0     &mmv MOVE_RIGHT  &kp UNDER          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS           &bootloader  &trans
-&trans     &trans        &trans        &to 0         &to 0         &kp BACKSPACE    &mkp LCLK        &trans             &trans                &trans                 &trans             &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1                     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &mmv MOVE_UP     &kp F6             &kp F7                &kp F8                 &kp F9             &kp F10      &trans
+&trans     &trans        &hold_homerow LEFT_GUI NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp TAB          &mmv MOVE_DOWN   &sticky_layer 4 4  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &sticky_layer 3 3  &kp F11      &kp F12
+&trans     &trans        &kp NUMBER_4                     &kp NUMBER_5  &kp NUMBER_6  &trans           &mmv MOVE_LEFT   &kp MINUS          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL          &trans       &trans
+&trans     &trans        &kp NUMBER_7                     &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0     &mmv MOVE_RIGHT  &kp UNDER          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS           &bootloader  &trans
+&trans     &trans        &trans                           &to 0         &to 0         &kp BACKSPACE    &mkp LCLK        &trans             &trans                &trans                 &trans             &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
