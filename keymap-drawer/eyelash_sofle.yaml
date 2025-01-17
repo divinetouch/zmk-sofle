@@ -161,7 +161,7 @@ layers:
   - '4'
   - {t: '5', type: held alternate}
   - '6'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '-', s: _}
   - '{'
