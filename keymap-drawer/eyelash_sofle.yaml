@@ -120,9 +120,9 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-space$$
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:mouse-left-click-outline$$
   - {t: \, s: '|'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
