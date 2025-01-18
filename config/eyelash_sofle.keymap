@@ -56,7 +56,7 @@
         hold-trigger-key-positions = <28 29 30 31 34 35 36 37>;
         tapping-term-ms = <200>;
         flavor = "tap-preferred";
-        quick-tap-ms = <200>;
+        quick-tap-ms = <150>;
         require-prior-idle-ms = <125>;
     };
 
@@ -79,6 +79,28 @@
         #binding-cells = <2>;
         tapping-term-ms = <200>;
         flavor = "tap-preferred";
+    };
+
+    layer_key: layer_key {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LAYER_KEY";
+        bindings = <&mo>, <&kp>;
+
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        require-prior-idle-ms = <100>;
+        tapping-term-ms = <200>;
+    };
+
+    new_behavior: new_behavior {
+        compatible = "zmk,behavior-hold-tap";
+        label = "NEW_BEHAVIOR";
+        bindings = <&mo>, <&kp>;
+
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        require-prior-idle-ms = <100>;
+        tapping-term-ms = <200>;
     };
 
     macros {
@@ -182,11 +204,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1                    &kp N2                    &kp N3                 &kp N4                 &kp N5            &kp UP_ARROW     &kp N6     &kp N7                 &kp N8                 &kp N9                     &kp N0                        &kp BACKSPACE
-&kp TAB     &kp Q                     &kp W                     &kp E                  &kp R                  &kp T             &kp DOWN_ARROW   &kp Y      &kp U                  &kp I                  &kp O                      &kp P                         &kp BSLH
-&kp CAPS    &hold_homerow LEFT_GUI A  &hold_homerow LEFT_ALT S  &hold_homerow LSHFT D  &hold_homerow LCTRL F  &kp G             &kp LEFT_ARROW   &kp H      &hold_homerow RCTRL J  &hold_homerow RSHFT K  &hold_homerow RIGHT_ALT L  &hold_homerow RGUI SEMICOLON  &kp APOS
-&kp LSHFT   &kp Z                     &kp X                     &kp C                  &kp V                  &kp B             &kp RIGHT_ARROW  &kp N      &kp M                  &kp COMMA              &kp DOT                    &kp FSLH                      &kp RIGHT_CONTROL
-&kp C_MUTE  &kp LCTRL                 &kp LEFT_GUI              &kp LEFT_ALT           &mo 1                  &sk LEFT_SHIFT    &kp ENTER        &kp ENTER  &kp SPACE              &sticky_layer 2 2      &kp RIGHT_SHIFT            &kp RIGHT_COMMAND
+&kp ESC     &kp N1                    &kp N2                    &kp N3                 &kp N4                 &kp N5            &kp UP_ARROW     &kp N6         &kp N7                 &kp N8                 &kp N9                     &kp N0                        &kp BACKSPACE
+&kp TAB     &kp Q                     &kp W                     &kp E                  &kp R                  &kp T             &kp DOWN_ARROW   &kp Y          &kp U                  &kp I                  &kp O                      &kp P                         &kp BSLH
+&kp CAPS    &hold_homerow LEFT_GUI A  &hold_homerow LEFT_ALT S  &hold_homerow LSHFT D  &hold_homerow LCTRL F  &kp G             &kp LEFT_ARROW   &kp H          &hold_homerow RCTRL J  &hold_homerow RSHFT K  &hold_homerow RIGHT_ALT L  &hold_homerow RGUI SEMICOLON  &kp APOS
+&kp LSHFT   &kp Z                     &kp X                     &kp C                  &kp V                  &kp B             &kp RIGHT_ARROW  &kp N          &kp M                  &kp COMMA              &kp DOT                    &kp FSLH                      &kp RIGHT_CONTROL
+&kp C_MUTE  &kp LCTRL                 &kp LEFT_GUI              &kp LEFT_ALT           &layer_key 1 SPACE     &sk LEFT_SHIFT    &kp ENTER        &kp BACKSPACE  &layer_key 2 ENTER     &sticky_layer 2 2      &kp RIGHT_SHIFT            &kp RIGHT_COMMAND
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
