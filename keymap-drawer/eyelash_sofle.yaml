@@ -120,7 +120,7 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:mouse-left-click-outline$$
@@ -185,7 +185,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LAYER0, h: toggle}
+  - $$mdi:keyboard-space$$
   - {t: LAYER0, h: toggle, type: held alternate}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:mouse-left-click-outline$$
