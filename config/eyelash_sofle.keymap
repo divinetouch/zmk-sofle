@@ -186,6 +186,12 @@
             bindings = <&sticky_layer 4 4>;
             key-positions = <56 41>;
         };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <57 59>;
+            timeout-ms = <200>;
+        };
     };
 
     keymap {
