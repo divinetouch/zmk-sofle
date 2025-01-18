@@ -111,8 +111,8 @@ layers:
   - '&paste'
   - {t: \, s: '|'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - ':'
-  - {t: '-', s: _}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - '&'
   - '*'
   - F12
@@ -124,7 +124,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:keyboard-space$$
+  - ':'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
