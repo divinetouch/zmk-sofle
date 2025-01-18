@@ -166,7 +166,7 @@ layers:
   - {t: '-', s: _}
   - '{'
   - '}'
-  - {t: '=', s: +}
+  - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -179,7 +179,7 @@ layers:
   - _
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - +
+  - {t: \, s: '|'}
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -242,8 +242,8 @@ layers:
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
-  - '~'
   - {t: '`', s: '~'}
+  - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
