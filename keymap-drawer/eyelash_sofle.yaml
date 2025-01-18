@@ -109,9 +109,9 @@ layers:
   - {t: '4', h: '4'}
   - '&copy'
   - '&paste'
-  - {t: \, s: '|'}
+  - '&save'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - '|'
+  - ':'
   - '&'
   - {t: '`', s: '~'}
   - '~'
@@ -124,8 +124,8 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - ':'
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: \, s: '|'}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
