@@ -47,9 +47,9 @@
         tap-ms = <30>;
     };
 
-    hold_homerow: hold_homerow {
+    left_hold_homerow: left_hold_homerow {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOLD_HOMEROW";
+        label = "LEFT_HOLD_HOMEROW";
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
@@ -88,6 +88,30 @@
         flavor = "tap-preferred";
         require-prior-idle-ms = <100>;
         tapping-term-ms = <200>;
+    };
+
+    right_home_row: right_home_row {
+        compatible = "zmk,behavior-hold-tap";
+        label = "RIGHT_HOME_ROW";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <100>;
+        flavor = "tap-unless-interrupted";
+        quick-tap-ms = <200>;
+        hold-trigger-key-positions = <14 27 40 41 42 43 44 31 18 17 16 15 1 4 5 3 2 28 29 30>;
+    };
+
+    new_behavior: new_behavior {
+        compatible = "zmk,behavior-hold-tap";
+        label = "NEW_BEHAVIOR";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <100>;
+        flavor = "tap-unless-interrupted";
+        quick-tap-ms = <200>;
+        hold-trigger-key-positions = <7 8 9 10 11 24 37 36 35 34 33 20 21 22 23 46 47 48 49 50 38 25>;
     };
 
     macros {
@@ -197,11 +221,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1                    &kp N2                    &kp N3                 &kp N4                 &kp N5            &kp UP_ARROW     &kp N6         &kp N7                 &kp N8                 &kp N9                     &kp N0                        &kp BACKSPACE
-&kp TAB     &kp Q                     &kp W                     &kp E                  &kp R                  &kp T             &kp DOWN_ARROW   &kp Y          &kp U                  &kp I                  &kp O                      &kp P                         &kp BSLH
-&kp CAPS    &hold_homerow LEFT_GUI A  &hold_homerow LEFT_ALT S  &hold_homerow LSHFT D  &hold_homerow LCTRL F  &kp G             &kp LEFT_ARROW   &kp H          &hold_homerow RCTRL J  &hold_homerow RSHFT K  &hold_homerow RIGHT_ALT L  &hold_homerow RGUI SEMICOLON  &kp APOS
-&kp LSHFT   &kp Z                     &kp X                     &kp C                  &kp V                  &kp B             &kp RIGHT_ARROW  &kp N          &kp M                  &kp COMMA              &kp DOT                    &kp FSLH                      &kp ENTER
-&kp C_MUTE  &kp LCTRL                 &kp LEFT_GUI              &mo 2                  &mo 1                  &sk LEFT_SHIFT    &kp ENTER        &kp BACKSPACE  &layer_key 3 SPACE     &mo 2                  &kp RIGHT_SHIFT            &kp RIGHT_COMMAND
+&kp ESC     &kp N1                         &kp N2                         &kp N3                      &kp N4                      &kp N5            &kp UP_ARROW     &kp N6         &kp N7                   &kp N8                   &kp N9                       &kp N0                          &kp BACKSPACE
+&kp TAB     &kp Q                          &kp W                          &kp E                       &kp R                       &kp T             &kp DOWN_ARROW   &kp Y          &kp U                    &kp I                    &kp O                        &kp P                           &kp BSLH
+&kp CAPS    &left_hold_homerow LEFT_GUI A  &left_hold_homerow LEFT_ALT S  &left_hold_homerow LSHFT D  &left_hold_homerow LCTRL F  &kp G             &kp LEFT_ARROW   &kp H          &right_home_row RCTRL J  &right_home_row RSHFT K  &right_home_row RIGHT_ALT L  &right_home_row RGUI SEMICOLON  &kp APOS
+&kp LSHFT   &kp Z                          &kp X                          &kp C                       &kp V                       &kp B             &kp RIGHT_ARROW  &kp N          &kp M                    &kp COMMA                &kp DOT                      &kp FSLH                        &kp ENTER
+&kp C_MUTE  &kp LCTRL                      &kp LEFT_GUI                   &mo 2                       &mo 1                       &sk LEFT_SHIFT    &kp ENTER        &kp BACKSPACE  &layer_key 3 SPACE       &mo 2                    &kp RIGHT_SHIFT              &kp RIGHT_COMMAND
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -223,11 +247,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1                     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &mmv MOVE_UP     &kp F6             &kp F7                &kp F8                 &kp F9             &kp F10      &trans
-&trans     &trans        &hold_homerow LEFT_GUI NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp TAB          &mmv MOVE_DOWN   &sticky_layer 4 4  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &sticky_layer 3 3  &kp F11      &kp F12
-&trans     &trans        &kp NUMBER_4                     &kp NUMBER_5  &kp NUMBER_6  &mkp RCLK        &mmv MOVE_LEFT   &kp MINUS          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE           &trans       &trans
-&trans     &trans        &kp NUMBER_7                     &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0     &mmv MOVE_RIGHT  &kp UNDER          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH      &bootloader  &trans
-&trans     &trans        &trans                           &kp SPACE     &to 0         &kp BACKSPACE    &mkp LCLK        &trans             &trans                &trans                 &trans             &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1                          &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &mmv MOVE_UP     &kp F6             &kp F7                &kp F8                 &kp F9             &kp F10      &trans
+&trans     &trans        &left_hold_homerow LEFT_GUI NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp TAB          &mmv MOVE_DOWN   &sticky_layer 4 4  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &sticky_layer 3 3  &kp F11      &kp F12
+&trans     &trans        &kp NUMBER_4                          &kp NUMBER_5  &kp NUMBER_6  &mkp RCLK        &mmv MOVE_LEFT   &kp MINUS          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE           &trans       &trans
+&trans     &trans        &kp NUMBER_7                          &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0     &mmv MOVE_RIGHT  &kp UNDER          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH      &bootloader  &trans
+&trans     &trans        &trans                                &kp SPACE     &to 0         &kp BACKSPACE    &mkp LCLK        &trans             &trans                &trans                 &trans             &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
