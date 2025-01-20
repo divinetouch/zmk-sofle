@@ -92,6 +92,18 @@
         tapping-term-ms = <200>;
     };
 
+    new_behavior: new_behavior {
+        compatible = "zmk,behavior-hold-tap";
+        label = "NEW_BEHAVIOR";
+        bindings = <&sk>, <&kp>;
+
+        #binding-cells = <2>;
+        hold-trigger-key-positions = <28 29 30 31 34 35 36 37>;
+        tapping-term-ms = <200>;
+        flavor = "tap-preferred";
+        require-prior-idle-ms = <100>;
+    };
+
     macros {
         control_c: control_c {
             compatible = "zmk,behavior-macro";
