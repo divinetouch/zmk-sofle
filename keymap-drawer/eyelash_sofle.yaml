@@ -150,10 +150,10 @@ layers:
   - '3'
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '4', h: '4'}
+  - '&'
   - (
   - )
-  - {t: '3', h: '3'}
+  - '*'
   - F11
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
@@ -167,7 +167,7 @@ layers:
   - '{'
   - '}'
   - '|'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '4'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -218,13 +218,13 @@ layers:
   - ^
   - '&'
   - '*'
-  - {t: (, type: held alternate}
+  - (
   - )
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '1'
   - {t: '2', type: held alternate}
-  - {t: '3', type: held alternate}
+  - '3'
   - '4'
   - {t: '5', s: '%'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -250,13 +250,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LAYER0, h: toggle, type: held alternate}
+  - {t: LAYER0, h: toggle}
   - {t: LAYER0, h: toggle, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: LAYER0, h: toggle, type: held alternate}
+  - {t: LAYER0, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   '4':
@@ -280,7 +280,7 @@ layers:
   - RGB EFR
   - RGB SPI
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '1'
   - '2'
   - '3'
@@ -297,7 +297,7 @@ layers:
   - '4'
   - '5'
   - '6'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
