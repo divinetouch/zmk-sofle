@@ -53,9 +53,10 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <100>;
+        tapping-term-ms = <400>;
         flavor = "tap-unless-interrupted";
         quick-tap-ms = <200>;
+        hold-trigger-key-positions = <7 8 9 10 11 24 25 38 37 49 48 47 46 36 35 34 33 50 23 22 21 20>;
     };
 
     sticky_layer: sticky_layer {
@@ -96,7 +97,7 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <100>;
+        tapping-term-ms = <400>;
         flavor = "tap-unless-interrupted";
         quick-tap-ms = <200>;
         hold-trigger-key-positions = <14 27 40 41 42 43 44 31 18 17 16 15 1 4 5 3 2 28 29 30>;
