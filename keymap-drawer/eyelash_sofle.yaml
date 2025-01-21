@@ -329,3 +329,9 @@ combos:
   k: {t: layer1, h: layer1}
 - p: [57, 59]
   k: $$mdi:keyboard-esc$$
+- p: [56, 29]
+  k: '2'
+- p: [56, 28]
+  k: '3'
+- p: [56, 41]
+  k: '4'
