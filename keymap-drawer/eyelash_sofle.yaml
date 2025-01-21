@@ -62,8 +62,8 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-space$$', h: '3'}
   - '2'
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-command$$
+  - RIGHT GUI
+  - $$mdi:apple-keyboard-control$$
   layer1:
   - {t: '`', s: '~'}
   - F1
@@ -327,11 +327,5 @@ layers:
 combos:
 - p: [27, 56]
   k: {t: layer1, h: layer1}
-- p: [56, 29]
-  k: {t: '2', h: '2'}
-- p: [56, 28]
-  k: {t: '3', h: '3'}
-- p: [56, 41]
-  k: {t: '4', h: '4'}
 - p: [57, 59]
   k: $$mdi:keyboard-esc$$
