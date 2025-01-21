@@ -111,7 +111,7 @@ layers:
   - '&paste'
   - '&save'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - ':'
+  - '|'
   - '&'
   - {t: '`', s: '~'}
   - '~'
