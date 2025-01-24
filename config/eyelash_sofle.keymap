@@ -211,11 +211,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1             &kp F2        &kp F3      &kp F4          &kp F5           &mmv MOVE_UP     &kp F6          &kp F7         &kp F8        &kp F9     &kp F10    &trans
-&trans      &trans             &kp LEFT_GUI  &control_c  &kp BACKSPACE   &control_tab     &mmv MOVE_DOWN   &kp TAB         &kp BACKSPACE  &kp EQUAL     &kp PLUS   &trans     &trans
-&trans      &sticky_layer 1 1  &mo 3         &mo 2       &control_space  &control_a       &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp ENTER  &trans
-&trans      &trans             &mo 4         &copy       &paste          &save            &mmv MOVE_RIGHT  &kp COLON       &kp AMPS       &kp GRAVE     &kp TILDE  &kp F12    &trans
-&kp C_MUTE  &trans             &trans        &trans      &trans          &kp BACKSPACE    &mkp LCLK        &kp BACKSLASH   &kp ENTER      &trans        &trans     &trans
+&kp GRAVE   &kp F1             &kp F2        &kp F3      &kp F4          &kp F5           &mmv MOVE_UP     &kp F6          &kp F7         &kp F8        &kp F9     &kp F10        &trans
+&trans      &trans             &kp LEFT_GUI  &control_c  &kp BACKSPACE   &control_tab     &mmv MOVE_DOWN   &kp TAB         &kp BACKSPACE  &kp EQUAL     &kp PLUS   &trans         &trans
+&trans      &sticky_layer 1 1  &mo 3         &mo 2       &control_space  &control_a       &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp ENTER      &trans
+&trans      &trans             &mo 4         &copy       &paste          &save            &mmv MOVE_RIGHT  &kp COLON       &kp AMPS       &kp GRAVE     &kp TILDE  &kp BACKSLASH  &trans
+&kp C_MUTE  &trans             &trans        &trans      &trans          &kp BACKSPACE    &mkp LCLK        &kp BACKSPACE   &kp ENTER      &trans        &trans     &trans
             >;
 
             display-name = "layer1";
