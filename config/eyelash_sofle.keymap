@@ -224,11 +224,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1                          &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &mmv MOVE_UP     &kp F6     &kp F7                &kp F8                 &kp F9         &kp F10      &trans
-&trans     &trans        &left_hold_homerow LEFT_GUI NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp TAB          &mmv MOVE_DOWN   &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp STAR       &kp F11      &kp F12
-&trans     &trans        &kp NUMBER_4                          &kp NUMBER_5  &kp NUMBER_6  &mkp RCLK        &mmv MOVE_LEFT   &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &mo 4        &trans
-&trans     &trans        &kp NUMBER_7                          &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0     &mmv MOVE_RIGHT  &kp UNDER  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &bootloader  &trans
-&trans     &trans        &trans                                &kp SPACE     &to 0         &kp BACKSPACE    &mkp LCLK        &trans     &trans                &trans                 &trans         &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1                          &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6     &kp F7                &kp F8                 &kp F9         &kp F10      &trans
+&trans     &trans        &left_hold_homerow LEFT_GUI NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp TAB         &mmv MOVE_DOWN   &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp STAR       &kp F11      &kp F12
+&trans     &trans        &kp NUMBER_4                          &kp NUMBER_5  &kp NUMBER_6  &mkp RCLK       &mmv MOVE_LEFT   &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &mo 4        &trans
+&trans     &trans        &kp NUMBER_7                          &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &mmv MOVE_RIGHT  &kp UNDER  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &bootloader  &trans
+&trans     &trans        &trans                                &kp SPACE     &to 0         &kp MINUS       &mkp LCLK        &kp EXCL   &kp EQUAL             &kp PLUS               &trans         &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
