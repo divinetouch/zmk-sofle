@@ -121,7 +121,7 @@
         copy: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RG(C)>;
+            bindings = <&kp LG(C)>;
             label = "COPY";
         };
 
