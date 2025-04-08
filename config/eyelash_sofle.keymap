@@ -212,7 +212,7 @@
 &kp GRAVE   &kp F1             &kp F2        &kp F3      &kp F4          &kp F5          &mmv MOVE_UP     &kp F6          &kp F7         &kp F8        &kp F9     &kp F10  &trans
 &trans      &trans             &kp LEFT_GUI  &control_c  &kp BACKSPACE   &control_tab    &mmv MOVE_DOWN   &kp TAB         &kp BACKSPACE  &kp EQUAL     &kp PLUS   &trans   &trans
 &trans      &sticky_layer 1 1  &mo 3         &mo 2       &control_space  &control_a      &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans   &trans
-&trans      &trans             &mo 4         &copy       &paste          &save           &mmv MOVE_RIGHT  &kp COLON       &kp AMPS       &kp GRAVE     &kp TILDE  &trans   &trans
+&trans      &trans             &mo 4         &copy       &paste          &save           &mmv MOVE_RIGHT  &kp EXCL        &kp AMPS       &kp GRAVE     &kp TILDE  &trans   &trans
 &kp C_MUTE  &trans             &trans        &trans      &trans          &kp SPACE       &mkp LCLK        &kp BACKSPACE   &kp ENTER      &trans        &trans     &trans
             >;
 
@@ -220,13 +220,13 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_2 {
+        coding {
             bindings = <
 &kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1                          &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6     &kp F7         &kp F8                &kp F9                 &kp F10      &trans
-&trans     &trans        &left_hold_homerow LEFT_GUI NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp TAB         &mmv MOVE_DOWN   &kp EXCL   &kp PLUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F11      &kp F12
+&trans     &trans        &left_hold_homerow LEFT_GUI NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp TAB         &mmv MOVE_DOWN   &kp EXCL   &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F11      &kp F12
 &trans     &trans        &kp NUMBER_4                          &kp NUMBER_5  &kp NUMBER_6  &mkp RCLK       &mmv MOVE_LEFT   &kp MINUS  &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &mo 4        &trans
 &trans     &trans        &kp NUMBER_7                          &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &mmv MOVE_RIGHT  &kp UNDER  &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &bootloader  &trans
-&trans     &trans        &trans                                &kp SPACE     &to 0         &kp SPACE       &mkp LCLK        &kp EXCL   &kp EQUAL      &kp PLUS              &trans                 &trans
+&trans     &trans        &trans                                &kp SPACE     &to 0         &kp SPACE       &mkp LCLK        &trans     &trans         &kp PLUS              &trans                 &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
