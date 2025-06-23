@@ -300,9 +300,9 @@ layers:
   - '6'
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - BT CLR ALL
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: BT CLR ALL, type: held}
+  - {t: '$$mdi:bluetooth-off$$', type: held}
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
