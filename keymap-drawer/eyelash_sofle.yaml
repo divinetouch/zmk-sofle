@@ -81,16 +81,16 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-control$$
+  - Ctl+Alt+$$mdi:arrow-left-bold$$
   - '&control_c'
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - Alt+Ctl+$$mdi:arrow-right-bold$$
   - '&control_tab'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '=', s: +}
   - +
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&ctrl_alt_left'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: layer1, h: layer1, type: held alternate}
@@ -103,7 +103,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&ctrl_alt_right'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
